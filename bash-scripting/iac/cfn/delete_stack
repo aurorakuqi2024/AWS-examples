@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "== deploy bucket in cfn"
+STACK_NAME="cnfs3"
+
+aws cloudformation delete-stack --stack-name $STACK_NAME --region ca-central-1
